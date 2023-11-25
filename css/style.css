@@ -1,8 +1,9 @@
 ﻿@font-face {
     font-family: 'adidas';
-    src: url(../Fonts/texgyreadventor-regular.otf) , url(../Fonts/texgyreadventor-bold.otf) , url(../Fonts/texgyreadventor-bolditalic.otf) ,
-    url(../Fonts/texgyreadventor-italic.otf) , url(../Fonts/texgyreadventor-bolditalic.otf);
+    src: url(../Fonts/texgyreadventor-regular.otf), url(../Fonts/texgyreadventor-bold.otf), url(../Fonts/texgyreadventor-bolditalic.otf),
+        url(../Fonts/texgyreadventor-italic.otf), url(../Fonts/texgyreadventor-bolditalic.otf);
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -18,10 +19,11 @@ section {
 
 /* header */
 header {
-    height: 105px;
+    height: 115px;
     margin-bottom: 10px;
 }
-header .offer{
+
+header .offer {
     display: flex;
     justify-content: space-around;
     font-size: 10px;
@@ -31,41 +33,48 @@ header .offer{
     padding-bottom: 10px;
     letter-spacing: 2px;
 }
+
 header .offer a {
     color: #fff;
 }
+
 header .offer svg {
     color: rgb(201, 114, 114) !important;
     background-color: #fff;
     width: 10px;
     height: 10px;
-    
+
 }
+
 .header-menu {
     display: flex;
     justify-content: flex-end;
     margin-right: 40px;
 }
-.header-menu a{
+
+.header-menu a {
     font-size: 12px;
     margin: 5px 10px;
     color: #585858;
 }
+
 nav {
     margin: 0 auto;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 30px;
     width: 95%;
 }
+
 nav .uil-bars {
     display: none;
 }
+
 nav .uil-times-circle {
     display: none;
 }
+
 nav ul {
     width: 100%;
     display: flex;
@@ -79,9 +88,11 @@ nav ul li a {
     letter-spacing: 2px;
     font-size: 12px;
 }
+
 nav ul li a.active {
     color: #000;
 }
+
 nav .logo img {
     width: 60px;
     height: auto;
@@ -90,29 +101,35 @@ nav .logo img {
 .user {
     display: flex;
 }
+
 .user i {
     margin: 0 10px;
     font-size: 20px;
     color: #000;
     cursor: pointer;
 }
-.user .search{
+
+.user .search {
     background-color: #E9ECEF;
     max-width: 60%;
     padding: 2px 10px;
     display: flex;
 }
-.search input{
+
+.search input {
     background-color: #E9ECEF;
     border: none;
     outline: none;
 }
+
 .search .uil-times-circle {
     display: none;
 }
+
 .user .user-icon {
     position: relative;
 }
+
 .user .user-icon::before {
     width: 16px;
     height: 16px;
@@ -129,9 +146,10 @@ nav .logo img {
 
 /* main */
 .main {
-    height: 90vh;
+    height: 700px;
     align-items: center;
 }
+
 .main .container {
     background: url(../img/orig-platform-story-mh-large-GY9342-GY9310-d_tcm221-919651.webp) no-repeat;
     background-size: 100% 100%;
@@ -143,15 +161,18 @@ nav .logo img {
     margin: 0 auto;
     padding: 0 10px;
 }
-.main h1 , .main p{
+
+.main h1, .main p {
     color: #fff;
 }
+
 .main h1 {
     font-size: 40px;
     font-weight: bolder;
     width: 30%;
     line-height: 1.1
 }
+
 .main p {
     margin: 10px 0;
 }
@@ -165,9 +186,11 @@ nav .logo img {
     display: inline-block;
     transition: .1s;
 }
+
 .main a:hover {
     color: #535353;
 }
+
 .main a::before {
     content: '';
     width: 100%;
@@ -186,22 +209,25 @@ nav .logo img {
     flex-direction: column;
     margin-top: 5%;
 }
+
 .popular h1 {
     font-style: italic;
     font-size: 27px;
     font-weight: bolder !important;
 }
-.popular-product a{
+
+.popular-product a {
     display: inline-block;
     margin: 30px 5px;
     padding: 10px;
     color: #000;
     border: 1px solid rgb(212, 212, 212);
     font-size: 16px;
-}   
-.popular-product a:hover{
+}
+
+.popular-product a:hover {
     border: 1px solid rgb(136, 136, 136);
-}   
+}
 
 .clothes {
     display: flex;
@@ -209,6 +235,7 @@ nav .logo img {
     padding: 0 10px;
     margin: 0 auto;
 }
+
 .clothes .clothes-item {
     background-color: #EBEFF1;
     width: calc(90% / 4 - 10px);
@@ -218,10 +245,12 @@ nav .logo img {
     margin: 0 auto;
     margin-top: 50px;
 }
-.clothes-item img{
+
+.clothes-item img {
     width: 177px;
     height: 177px;
 }
+
 .clothes-item a {
     font-size: 15px;
     font-weight: bold;
@@ -237,6 +266,7 @@ nav .logo img {
     position: relative;
 
 }
+
 .arrivals {
     max-width: 1300px;
     position: relative;
@@ -250,13 +280,16 @@ nav .logo img {
     border-bottom: 1px solid #D3D7DA;
     font-size: 14px;
 }
+
 .arrivals .new-arrivals {
     padding: 0 30px;
 }
-.arrivals .new-arrivals a{
+
+.arrivals .new-arrivals a {
     margin: 0 12px;
     color: #000;
 }
+
 .arrivals .view-all a {
     padding: 0 5px;
     color: #000;
@@ -264,11 +297,13 @@ nav .logo img {
     transition: .2s;
     padding-bottom: 5px;
 }
+
 .arrivals .view-all a:hover {
     color: #fff;
     text-decoration: none;
     background-color: #000;
 }
+
 .new-arrivals a.active::before {
     content: '';
     position: absolute;
@@ -278,7 +313,8 @@ nav .logo img {
     height: 3px;
     background-color: #000;
 }
-.new-arrivals a.trending:hover::before{
+
+.new-arrivals a.trending:hover::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -287,37 +323,45 @@ nav .logo img {
     height: 3px;
     background-color: #000;
 }
+
 .arrivals-section .wrapper {
     margin: 0 auto;
 }
+
 .arrivals-slider {
-    display:flex;
+    display: flex;
     width: 100%;
     transition: .2s
 }
-.arrivals-slider .slider-item{
+
+.arrivals-slider .slider-item {
     margin: 5px;
     position: relative;
     cursor: pointer;
     padding-bottom: 40px;
 }
+
 .arrivals-slider .slider-item:hover {
     border: 1px solid #000;
 }
+
 .arrivals-slider .slider-item i {
     font-size: 20px;
     font-weight: bolder;
-    position:absolute;
+    position: absolute;
     top: 20px;
     right: 20px;
     z-index: 10000;
 }
+
 .arrivals-slider .slider-item img {
     max-width: 275px;
 }
+
 .arrivals-slider .slider-img {
     position: relative;
 }
+
 .arrivals-slider .slider-img.off::before {
     content: '$50 FOR MEMBERS';
     color: #00A3E0;
@@ -329,6 +373,7 @@ nav .logo img {
     font-size: 13px;
     transition: .1s;
 }
+
 .arrivals-slider .slider-img::after {
     content: '$60';
     background-color: #fff;
@@ -339,6 +384,7 @@ nav .logo img {
     font-size: 13px;
     transition: .1s;
 }
+
 .arrivals-slider .slider-img.off::after {
     content: '$60';
     background-color: #fff;
@@ -349,37 +395,41 @@ nav .logo img {
     font-size: 13px;
 }
 
-.arrivals-slider .slider-item:hover .slider-img.off::before  {
+.arrivals-slider .slider-item:hover .slider-img.off::before {
     bottom: 10px;
 }
-.arrivals-slider .slider-item:hover .slider-img::after  {
+
+.arrivals-slider .slider-item:hover .slider-img::after {
     bottom: 10px;
 }
-.arrivals-slider .slider-item:hover .slider-img.off::after  {
+
+.arrivals-slider .slider-item:hover .slider-img.off::after {
     bottom: 40px;
 }
+
 .arrivals-slider .slider-content {
     padding: 10px;
 }
-.arrivals-slider .slider-content h5,span {
+
+.arrivals-slider .slider-content h5, span {
     font-size: 13px;
     font-weight: lighter;
 }
-.arrivals-slider .slider-content p{
+
+.arrivals-slider .slider-content p {
     color: #767677;
     font-size: 13px;
 }
 
-.arrivals-section .wrapper {
-}
-.arrivals-section  .indicator {
+.arrivals-section .indicator {
     text-align: center;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     margin-top: 60px;
 }
-.arrivals-section .slide{
+
+.arrivals-section .slide {
     text-align: center;
     width: 20px;
     height: 1px;
@@ -388,33 +438,42 @@ nav .logo img {
     cursor: pointer;
     transition: .2s
 }
-.arrivals-section .slide.active{
+
+.arrivals-section .slide.active {
     background-color: #000;
     height: 4px;
 }
+
 .arrivals-section .slide:hover {
     background-color: #000;
     height: 4px;
 }
-.arrivals-section  .prev ,.arrivals-section  .next {
+
+.arrivals-section .prev, .arrivals-section .next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    line-height: 20px;
     cursor: pointer;
-    font-size: 20px;
-    padding: 5px 10px;
+    font-size: 30px;
     border: 1px solid #000;
     background-color: #fff;
 }
+
 .arrivals-section .prev {
     display: none;
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 5%;
-    transform: translateY(-100%);
+    transform: translateY(-50%);
 }
+
 .arrivals-section .next {
     position: absolute;
-    top: 55%;
+    top: 50%;
     right: 5%;
-    transform: translateY(-100%);
+    transform: translateY(-50%);
 }
 
 
@@ -423,6 +482,7 @@ nav .logo img {
 .story {
     background-color: #ECEFF1;
 }
+
 .story .wrapper {
     margin: 0 auto;
     padding: 40px;
@@ -430,17 +490,20 @@ nav .logo img {
     display: flex;
     justify-content: center;
 }
+
 .story .story-item {
     margin: 20px;
-} 
+}
+
 .story h1 {
     font-size: 20px;
-    font-weight: normal;  
+    font-weight: normal;
 }
+
 .story p {
     margin: 20px 0;
     font-size: 14px;
-    font-weight: lighter;  
+    font-weight: lighter;
     word-spacing: 2px;
 }
 
@@ -448,6 +511,7 @@ nav .logo img {
 footer .adiclub {
     background-color: #EDE734;
 }
+
 .adiclub .wrapper {
     display: flex;
     align-items: center;
@@ -455,11 +519,13 @@ footer .adiclub {
     padding: 30px 10px;
     margin: 0 auto;
 }
+
 .adiclub h1 {
     font-weight: bolder;
     font-size: 30px;
     width: 45%;
 }
+
 .adiclub a {
     position: relative;
     color: #fff;
@@ -469,6 +535,7 @@ footer .adiclub {
     display: inline-block;
     margin-left: 60px;
 }
+
 .adiclub a::before {
     content: '';
     width: 100%;
@@ -486,31 +553,38 @@ footer .adiclub {
     display: flex;
     justify-content: center;
 }
+
 .wrapper .footer-item {
     display: flex;
     flex-direction: column;
     margin: 0 30px;
     text-transform: capitalize;
 }
-.footer-item h1{
+
+.footer-item h1 {
     font-size: 18px;
     margin-bottom: 10px;
 }
+
 .footer-item a {
     color: #000;
     font-size: 12px;
     line-height: 1.8;
 }
+
 .footer-item a:hover {
     text-decoration: underline;
 }
+
 .footer-item a.margin {
     margin-bottom: 15px;
 }
+
 .footer-item .social {
     display: flex;
     flex-direction: column;
 }
+
 .footer-item .social i {
     width: 25px;
     height: 25px;
@@ -527,27 +601,33 @@ footer .adiclub {
 .copyright {
     background-color: #363738;
 }
+
 .copyright .wapper {
     max-width: 990px;
     margin: 0 auto;
     color: #C3C9BE;
     padding: 20px 0;
 }
+
 .wapper .rules {
     text-align: center;
 }
+
 .rules span {
     border-right: 1px solid #C3C9BE;
     padding: 1px 10px !important;
     cursor: pointer;
 }
+
 .rules span:last-child {
     border-right: none
 }
+
 .c-adidas span {
     display: inline-block;
     margin-top: 40px;
 }
+
 .c-adidas span, .rules span {
     font-size: 11px;
     padding: 0 5px;
@@ -563,29 +643,32 @@ footer .adiclub {
         top: 0;
         transition: .5s ease-in-out;
     }
+
     nav ul.active {
-        position: fixed;
         opacity: 1;
         visibility: visible;
         background-color: #fff;
         left: 0;
-        top: 0;
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    nav ul.active li a{
+
+    nav ul.active li a {
         display: block;
-        margin: 30px 0;
-        font-size: 30px !important;
+        margin: 20px 0;
+        font-size: 20px ;
         font-weight: bold;
     }
+
     nav .uil-bars {
         display: block;
         cursor: pointer;
+        font-size: 30px;
     }
+
     nav .uil-times-circle {
         display: block;
         cursor: pointer;
@@ -593,32 +676,52 @@ footer .adiclub {
         top: 5%;
         right: 5%;
     }
+
     .main {
         background: url(../img/orig-platform-story-mh-large-GY9342-GY9310-d_tcm221-919651.webp) cover no-repeat;
         width: 100%;
-        height: 63vh;
+        height: 500px;
     }
+
     .main .container {
         width: 100%;
         padding: 0 10px;
     }
-    .user .search{
+
+    .main h1 {
+        font-size: 30px;
+        line-height: 1.2;
+        width: 50%;
+    }
+    .main a {
+        position: relative;
+        color: #000;
+        background-color: #fff;
+        padding: 5px 10px;
+        margin: 5px 0;
+        display: inline-block;
+        transition: .1s;
+    }
+    .user .search {
         background-color: #E9ECEF;
         max-width: 60%;
         padding: 2px 1px 4px 10px;
         display: flex;
     }
-    .search input{
+
+    .search input {
         background-color: #E9ECEF;
         max-width: 100px;
         border: none;
         outline: none;
     }
+
     .user i {
         margin: 0 10px;
         font-size: 20px;
         color: #000;
     }
+
     .clothes {
         display: flex;
         flex-wrap: wrap;
@@ -626,6 +729,7 @@ footer .adiclub {
         padding: 0 10px;
         margin: 0 auto;
     }
+
     .clothes .clothes-item {
         background-color: #EBEFF1;
         width: calc(90% / 2);
@@ -635,48 +739,61 @@ footer .adiclub {
         margin: 0 auto;
         margin-top: 50px;
     }
-    .clothes-item img{
+
+    .clothes-item img {
         width: 100%;
         height: 100%;
     }
+
     .arrivals-section {
         display: none;
     }
+
     .story {
         margin-top: 40px;
     }
+
     .wrapper .footer-item {
         display: flex;
         flex-direction: column;
         margin: 0 8px;
         text-transform: capitalize;
     }
-    .footer-item h1{
+
+    .footer-item h1 {
         font-size: 16px;
         margin-bottom: 10px;
     }
+
     .footer-item a {
         color: #000;
         font-size: 12px;
         line-height: 1.8;
     }
+
 }
 
-@media screen and (max-width: 672px) { 
-    .user .search{
+@media screen and (max-width: 672px) {
+    .header-menu {
+        display: none;
+    }
+
+    .user .search {
         background-color: #fff;
         max-width: 100%;
         padding: 2px;
         display: flex;
         justify-content: space-between;
-      
+
     }
-    .search input{
+
+    .search input {
         background-color: #E9ECEF;
         width: 0;
         border: none;
         outline: none;
     }
+
     .search.active {
         width: 100%;
         position: fixed;
@@ -685,18 +802,35 @@ footer .adiclub {
         background-color: #E9ECEF;
         padding: 10px;
     }
-    .search.active input{
+
+    .search.active input {
         background-color: #E9ECEF;
         width: 400px !important;
         border: none;
         outline: none;
     }
+
     .search.active .uil-search {
         display: none;
     }
+
     .search.active .uil-times-circle {
         display: block;
         padding: 2px;
+    }
+
+    .main {
+        height: auto;
+    }
+    .main .container {
+        background: url(../img/orig-platform-story-mh-large-GY9342-GY9310-d_tcm221-919651.webp) no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 20px;
     }
     .story .wrapper {
         margin: 0 auto;
@@ -704,6 +838,7 @@ footer .adiclub {
         max-width: 1150px;
         display: block;
     }
+
     .adiclub .wrapper {
         display: flex;
         flex-direction: column;
@@ -712,32 +847,60 @@ footer .adiclub {
         padding: 20px 0;
         margin: 0;
     }
-    .adiclub .wrapper h1{
+
+    .adiclub .wrapper h1 {
         width: 85%;
     }
+
     .adiclub .wrapper a {
         margin-right: 10px;
         margin: 10px 0;
     }
+
     .footer .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .footer-item a , .footer-item i{
+
+    .footer-item a, .footer-item i {
         display: none;
     }
-    .footer h1 a{
+
+    .footer h1 a {
         display: flex;
         justify-content: center;
     }
-    .copyright .wrapper{
 
-    }
+    .copyright .wrapper {}
 }
 
-@media screen and (max-width: 425px) {
-    .header-menu {
-        display: none;
+@media (max-width: 425px) {
+    header .offer {
+        padding: 7px 10px;
+        font-size: 6px;
     }
-   
+    .main h1 {
+        font-size: 23px;
+        line-height: 1.2;
+        width: 70%;
+    }
+    .main p{
+        font-size: 14px;
+    }
+    .main a {
+        font-size: 12px;
+    }
+    .popular h1 {
+        font-style: italic;
+        font-size: 20px;
+        font-weight: bolder !important;
+        margin-bottom: 30px;
+    }
+    .popular-product a {
+        font-size: 14px;
+        margin: 10px 5px;
+    }
+    .story .wrapper {
+        padding: 20px;
+    }
 }
